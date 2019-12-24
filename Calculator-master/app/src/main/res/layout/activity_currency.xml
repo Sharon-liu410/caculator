@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/currency_conversion"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/source_value"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_bg"
+            android:textSize="20sp"
+            android:hint="@string/source_value_hint"/>
+
+        <TextView
+            android:id="@+id/source_currency"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:hint="@string/source_currency_hint"/>
+
+        <ImageButton
+            android:id="@+id/source_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/arrow_down_float"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/destination_value"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:enabled="false"
+            android:background="@drawable/edit_bg"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/copy_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_input_get"/>
+
+        <TextView
+            android:id="@+id/destination_currency"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:hint="@string/destination_currency_hint"/>
+
+        <ImageButton
+            android:id="@+id/destination_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/arrow_down_float"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/submit"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>

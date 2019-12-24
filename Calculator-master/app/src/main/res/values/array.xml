@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "unit">
+        <item>千米km</item>
+        <item>米m</item>
+        <item>分米dm</item>
+        <item>厘米cm</item>
+        <item>毫米mm</item>
+        <item>微米μm</item>
+        <item>纳米nm</item>
+    </string-array>
+
+</resources>

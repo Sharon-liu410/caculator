@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/unit_conversion"
+        android:title = "@string/unit_conversion" />
+    <item
+        android:id = "@+id/radix_conversion"
+        android:title = "@string/standard" />
+    <item
+        android:id="@+id/currency_conversion"
+        android:title="@string/currency_conversion"/>
+</menu>
